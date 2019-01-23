@@ -1,0 +1,22 @@
+<h2>Property target</h2>
+<img [src]="image">
+<img src="{{image}}">
+<img bind-src="image">
+<!-- <app-hero-detail [hero]="currentHero"></app-hero-detail> -->
+<div [ngClass]="{'special': isSpecial}"></div>
+<h2>Event Target</h2>
+<div (click)="onClick('click')">Click</div>
+<!-- <app-hero-detail (deleteRequest)="deleteHero()"></app-hero-detail> -->
+<!-- <div (myClick)="clicked=$event" clickable>click me</div> -->
+<h2>To-Way</h2>
+<input [(ngModel)]="name">
+
+<h2>Attribute target</h2>
+<button [attr.aria-label]="help">help</button>
+
+<h2>Class target</h2>
+<div [class.special]="isSpecial">Special</div>
+
+<h2>Style target</h2>
+<button [style.color]="isSpecial ? 'red' : 'green'">Button</button>
+

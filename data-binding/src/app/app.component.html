@@ -15,3 +15,7 @@
 <div></div>
 
 <input (ngModelChange)="model = $event" [ngModel]="model">
+
+<div></div>
+<input [value]="model" (input)="model = $event.target.value">
+
