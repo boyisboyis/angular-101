@@ -1,0 +1,17 @@
+<div>Interpolation</div>
+<div>{{title}}</div>
+<div></div>
+<div>Expression</div>
+<div>{{ 1 + 1}}</div>
+
+<div>{{model}}</div>
+<input [(ngModel)]="model">
+<div></div>
+
+<input [ngModel]="model">
+<div></div>
+
+<input (ngModelChange)="model">
+<div></div>
+
+<input (ngModelChange)="model = $event" [ngModel]="model">
