@@ -6,6 +6,7 @@
 <div [ngClass]="{'special': isSpecial}"></div>
 <h2>Event Target</h2>
 <div (click)="onClick('click')">Click</div>
+<input (keyup.enter)="onClick($event.target.value);inputKeyEnter.value = ''" #inputKeyEnter>
 <!-- <app-hero-detail (deleteRequest)="deleteHero()"></app-hero-detail> -->
 <!-- <div (myClick)="clicked=$event" clickable>click me</div> -->
 <h2>To-Way</h2>

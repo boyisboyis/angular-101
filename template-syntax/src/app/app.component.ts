@@ -13,7 +13,7 @@ export class AppComponent {
   public name;
   public help = 'help';
 
-  public onClick() {
-    alert('click');
+  public onClick(value) {
+    alert(value);
   }
 }

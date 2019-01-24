@@ -1,0 +1,8 @@
+<div>{{title}}</div>
+<app-hello-world></app-hello-world>
+
+<ul>
+  <li *ngFor="let name of names">
+    <app-item [name]="name"></app-item>
+  </li>
+</ul>
